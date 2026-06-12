@@ -182,22 +182,6 @@
 
         </article>
 
-        <article class="builder-skill-card" data-builder-skill="prototyping">
-          <div class="builder-skill-icon"><i class="bi bi-arrow-repeat"></i></div>
-          <h6>Rapid Prototyping</h6>
-          <p>Fast prints, mockups, test rigs, and iteration before the final build.</p>
-          <div class="builder-skill-tags">
-            <span>3D printing</span>
-            <span>Mockups</span>
-            <span>Iteration</span>
-          </div>
-
-            <div class="builder-card-cta">
-              <span>Open build notes</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </div>
-
-        </article>
 
         <article class="builder-skill-card" data-builder-skill="hardware">
           <div class="builder-skill-icon"><i class="bi bi-cpu"></i></div>
@@ -215,21 +199,7 @@
             </div>
         </article>
 
-        <article class="builder-skill-card" data-builder-skill="testing">
-          <div class="builder-skill-icon"><i class="bi bi-graph-up-arrow"></i></div>
-          <h6>Testing & Debugging</h6>
-          <p>Graphs, measurements, calibration, tuning, and controlled experiments.</p>
-          <div class="builder-skill-tags">
-            <span>Data</span>
-            <span>Tuning</span>
-            <span>Validation</span>
-          </div>
 
-            <div class="builder-card-cta">
-              <span>Open build notes</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </div>
-        </article>
 
       </div>
     </div>
@@ -713,11 +683,11 @@
       tags: ["SolidWorks", "NX", "Nomad", "OnShape"],
       detail: "I use CAD as the bridge between an idea and something that can actually be built: assemblies, moving parts, fixtures, brackets, and geometry that makes sense in the shop.",
       burst: [
-        { type: "photo", label: "Drivetrain Protection", image: "assets/img/portfolio/FPTG.png" },
+        { type: "photo", label: "Drivetrain Guard", image: "assets/img/portfolio/cad1.png" },
         { type: "info", title: "Design focus", text: "Manufacturable and minimal parts that are compliant and inspire confidence" },
-        { type: "photo", label: "Mechanisms", image: "assets/img/portfolio/Hpaddle.png" },
+        { type: "photo", label: "Mechanisms", image: "assets/img/portfolio/cad2.png" },
         { type: "info", title: "Style", text: "Function first, clean enough to present, simple enough to fabricate." },
-        { type: "photo", label: "Market Ready Caliper", image: "assets/img/portfolio/calipers.jpg" },
+        { type: "photo", label: "Market Ready Caliper", image: "assets/img/portfolio/cad3.png" },
         { type: "info", title: "Outputs", text: "HROE Baja Car parts, ISO Compliant Brakes, Sub $20 Haptic Paddles, State of the art fixtures for research." }
 
       ]
@@ -726,15 +696,15 @@
     programming: {
       title: "Programming",
       icon: "bi-code-slash",
-      tags: ["Python", "C/C++", "Arduino"],
+      tags: ["C/C++", "Python"],
       detail: "I like code that touches hardware: sensor data, microcontroller logic, control loops, serial communication, and small tools that make machines easier to understand.",
       burst: [
-        { type: "photo", label: "Control code", image: "assets/img/portfolio/app-2.jpg" },
-        { type: "info", title: "Where code fits", text: "Reading sensors, sending commands, plotting live data, and debugging behavior." },
-        { type: "photo", label: "Data tools", image: "assets/img/portfolio/product-2.jpg" },
-        { type: "info", title: "Languages", text: "Python for analysis and tools; C/C++ and Arduino-style code for embedded systems." },
-        { type: "photo", label: "Automation", image: "assets/img/portfolio/branding-2.jpg" },
-        { type: "info", title: "Goal", text: "Make a physical system react smoothly instead of just technically working." }
+        { type: "photo", label: "Control Code", image: "assets/img/portfolio/programming1.png" },
+        { type: "info", title: "Live Haptic Paddle Data", text: "Real-time filtering, force sensing, motor position tracking, and feedback control for a physical haptic interface." },
+        { type: "photo", label: "Data tools", image: "assets/img/portfolio/programming2.png" },
+        { type: "info", title: "Programmed Wire Bending Sequence", text: "Custom motion logic for turning digital bend instructions into a controlled 3D wire-forming path." },
+        { type: "photo", label: "Automation", image: "assets/img/portfolio/programming3.png" },
+        { type: "info", title: "G-Code Based Bending Automation", text: "Arduino-based motion control that converts programmed bend instructions into coordinated movement across three encoder-equipped stepper motors." }
       ]
     },
 
@@ -753,20 +723,6 @@
       ]
     },
 
-    prototyping: {
-      title: "Rapid Prototyping",
-      icon: "bi-arrow-repeat",
-      tags: ["3D printing", "Mockups", "Iteration"],
-      detail: "I use quick prototypes to answer questions early. A rough print, cardboard model, or small test rig can reveal problems faster than over-planning.",
-      burst: [
-        { type: "photo", label: "Prototype rounds", image: "assets/img/portfolio/books-1.jpg" },
-        { type: "info", title: "Main idea", text: "Build the ugly version early so the final version is less ugly later." },
-        { type: "photo", label: "3D prints", image: "assets/img/portfolio/books-2.jpg" },
-        { type: "info", title: "Fast feedback", text: "Fit, feel, motion, interference, stiffness, ergonomics, and assembly order." },
-        { type: "photo", label: "Test rigs", image: "assets/img/portfolio/books-3.jpg" },
-        { type: "info", title: "Why it matters", text: "Iteration makes projects less theoretical and more honest." }
-      ]
-    },
 
     hardware: {
       title: "Machines & Hardware",
@@ -783,20 +739,8 @@
       ]
     },
 
-    testing: {
-      title: "Testing & Debugging",
-      icon: "bi-graph-up-arrow",
-      tags: ["Data", "Tuning", "Validation"],
-      detail: "I like the detective-work part: isolate variables, graph the signal, test one change at a time, and stop guessing about why the system is weird.",
-      burst: [
-        { type: "photo", label: "Live plots", image: "assets/img/portfolio/app-2.jpg" },
-        { type: "info", title: "Debugging rule", text: "Do not fix five things at once. You will never know which one mattered." },
-        { type: "photo", label: "Measurements", image: "assets/img/portfolio/product-2.jpg" },
-        { type: "info", title: "Tools", text: "Serial output, plots, sensor logs, quick tests, calibration runs, and sanity checks." },
-        { type: "photo", label: "Iteration", image: "assets/img/portfolio/branding-2.jpg" },
-        { type: "info", title: "End goal", text: "A system that is not just impressive once, but repeatable." }
-      ]
-    }
+
+    
   };
 
   function openBuilderSkill(key) {
