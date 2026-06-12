@@ -73,8 +73,9 @@
 }
 
 .scroll-hero-text .typed {
-  color: white;
-  border-bottom: 3px solid white;
+  color: var(--typed-color, #66d9ff);
+  border-bottom: 3px solid var(--typed-color, #66d9ff);
+  transition: color 0.25s ease, border-color 0.25s ease;
 }
 
 @media (max-width: 768px) {

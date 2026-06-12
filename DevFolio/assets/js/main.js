@@ -109,13 +109,29 @@
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute('data-typed-items');
     typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 750
-    });
+      const typedColors = [
+        "#66d9ff",
+        "#ff6b6b",
+        "#ffd166",
+        "#06d6a0",
+        "#c77dff",
+        "#f72585",
+        "#4cc9f0",
+        "#f8961e"
+      ];
+
+      new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 45,
+        backSpeed: 25,
+        backDelay: 900,
+
+        preStringTyped: function(arrayPos, self) {
+          const randomColor = typedColors[Math.floor(Math.random() * typedColors.length)];
+          self.el.style.setProperty("--typed-color", randomColor);
+        }
+      });
   }
 
   /**
