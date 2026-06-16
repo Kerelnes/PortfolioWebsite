@@ -1447,6 +1447,12 @@ section,
   
 }
 
+
+.mechanisms-label {
+  color: black;
+}
+
+
 .builder-skills-kicker {
   color: var(--accent-color);
   text-transform: uppercase;
