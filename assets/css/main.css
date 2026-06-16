@@ -1666,25 +1666,25 @@ section,
 }
 
 .builder-wide {
-  width: 280px;
-  height: 190px;
+  width: 320px;
+  height: 240px;
 }
 
 .builder-square {
-  width: 205px;
-  height: 205px;
+  width: 240px;
+  height: 240px;
 }
 
 .builder-small {
-  width: 220px;
-  min-height: 145px;
+  width: 260px;
+  min-height: 180px;
 }
 
 .builder-pos-1 {
   left: 5%;
   top: 8%;
-  --x: -72px;
-  --y: -68px;
+  --x: -96px;
+  --y: -86px;
   --r: -8deg;
 }
 
@@ -1716,7 +1716,7 @@ section,
   left: 2%;
   bottom: 9%;
   --x: -82px;
-  --y: 76px;
+  --y: 96px;
   --r: 7deg;
 }
 
@@ -1724,7 +1724,7 @@ section,
   right: 2%;
   bottom: 5%;
   --x: 100px;
-  --y: 86px;
+  --y: 106px;
   --r: 8deg;
 }
 
@@ -1862,7 +1862,7 @@ section,
 
 /* The card field is shorter and tighter */
 .builder-explode-cloud {
-  min-height: 500px;
+  min-height: 720px;
   position: relative;
 }
 
@@ -2025,7 +2025,7 @@ section,
   }
 
   .builder-explode-cloud {
-    min-height: 620px;
+    min-height: 680px;
   }
 }
 
