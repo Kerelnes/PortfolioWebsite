@@ -2255,7 +2255,7 @@ section,
 
 .hero-me-content h2 {
   position: relative;
-  top: 80px;
+  top: 120px;
   color: white;
   font-size: clamp(38px, 6vw, 86px);
   line-height: 0.95;
@@ -2266,7 +2266,7 @@ section,
 
 .hero-me-content p {
   position: relative;
-  top: 80px;
+  top: 120px;
   color: rgba(255, 255, 255, 0.84);
   font-size: clamp(17px, 2vw, 24px);
   line-height: 1.55;
