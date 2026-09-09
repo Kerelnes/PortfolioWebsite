@@ -261,7 +261,49 @@
       }
     })
   }
+  
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+
+  /**
+   * Builder cards hop once when revealed
+   */
+  const builderSection = document.querySelector('.builder-skills');
+  const builderCards = document.querySelectorAll('.builder-skill-card');
+
+  if (builderSection && builderCards.length > 0) {
+
+    const builderHopObserver = new IntersectionObserver((entries, observer) => {
+
+      entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        builderCards.forEach((card, index) => {
+
+          setTimeout(() => {
+            card.classList.add('hint-hop');
+
+            // Remove class after animation finishes
+            setTimeout(() => {
+              card.classList.remove('hint-hop');
+            }, 650);
+
+          }, index * 150);
+
+        });
+
+        // Only animate once
+        observer.unobserve(entry.target);
+
+      });
+
+    }, {
+      threshold: 0.4
+    });
+
+    builderHopObserver.observe(builderSection);
+  }
 
 })();

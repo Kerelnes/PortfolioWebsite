@@ -1812,6 +1812,39 @@ section,
   cursor: default;
 }
 
+/* Builder card click hint */
+.builder-skill-card {
+  cursor: pointer;
+}
+
+/* Temporary hop animation */
+.builder-skill-card.hint-hop {
+  animation: builderHop 0.55s ease;
+}
+
+@keyframes builderHop {
+  0% {
+    translate: 0 0;
+  }
+
+  35% {
+    translate: 0 -10px;
+  }
+
+  60% {
+    translate: 0 2px;
+  }
+
+  80% {
+    translate: 0 -3px;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Calmer / tighter exploded skill modal override
 --------------------------------------------------------------*/
