@@ -2062,6 +2062,50 @@ section,
   }
 }
 
+
+/* Make the categories in the portfolio section hop for interactive effect. */
+/*--------------------------------------------------------------
+# Portfolio Filter Hop
+--------------------------------------------------------------*/
+
+.portfolio-filters li {
+  cursor: pointer;
+}
+
+.portfolio-filters li.portfolio-hint-hop {
+  animation: portfolioHop 0.6s ease;
+}
+
+@keyframes portfolioHop {
+
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  30% {
+    transform: translateY(-12px) rotate(-2deg);
+  }
+
+  55% {
+    transform: translateY(3px) rotate(1deg);
+  }
+
+  75% {
+    transform: translateY(-4px) rotate(-0.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-filters li.portfolio-hint-hop {
+    animation: none;
+  }
+}
+
+
 /* Phone: stack cards instead of exploding off-screen */
 @media (max-width: 650px) {
   .builder-explode-overlay {

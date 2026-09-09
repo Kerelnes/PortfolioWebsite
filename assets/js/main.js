@@ -265,7 +265,6 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-
   /**
    * Builder cards hop once when revealed
    */
@@ -285,7 +284,6 @@
           setTimeout(() => {
             card.classList.add('hint-hop');
 
-            // Remove class after animation finishes
             setTimeout(() => {
               card.classList.remove('hint-hop');
             }, 650);
@@ -294,7 +292,6 @@
 
         });
 
-        // Only animate once
         observer.unobserve(entry.target);
 
       });
@@ -305,5 +302,50 @@
 
     builderHopObserver.observe(builderSection);
   }
+
+
+  /**
+   * Portfolio filter buttons hop once when revealed
+   */
+  const portfolioFilterBar = document.querySelector('.portfolio-filters');
+  const portfolioFilters = document.querySelectorAll('.portfolio-filters li');
+
+  if (portfolioFilterBar && portfolioFilters.length > 0) {
+
+    const portfolioHopObserver = new IntersectionObserver((entries, observer) => {
+
+      entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        setTimeout(() => {
+
+          portfolioFilters.forEach((filter, index) => {
+
+            setTimeout(() => {
+
+              filter.classList.add('portfolio-hint-hop');
+
+              setTimeout(() => {
+                filter.classList.remove('portfolio-hint-hop');
+              }, 600);
+
+            }, index * 130);
+
+          });
+
+        }, 500);
+
+        observer.unobserve(entry.target);
+
+      });
+
+    }, {
+      threshold: 0.5
+    });
+
+    portfolioHopObserver.observe(portfolioFilterBar);
+  }
+
 
 })();
